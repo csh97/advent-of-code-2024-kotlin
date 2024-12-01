@@ -1,0 +1,33 @@
+{
+    "amperBuild": "0.5.0+e7ace8b",
+    "configuration": {},
+    "inputs": [],
+    "inputsState": {},
+    "outputs": [
+        "/Users/conorhaworth/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-klib-commonizer-embeddable/2.0.21/kotlin-klib-commonizer-embeddable-2.0.21.jar",
+        "/Users/conorhaworth/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib/2.0.21/kotlin-stdlib-2.0.21.jar",
+        "/Users/conorhaworth/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-compiler-embeddable/2.0.21/kotlin-compiler-embeddable-2.0.21.jar",
+        "/Users/conorhaworth/Library/Caches/Amper/.m2.cache/org/jetbrains/annotations/13.0/annotations-13.0.jar",
+        "/Users/conorhaworth/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-script-runtime/2.0.21/kotlin-script-runtime-2.0.21.jar",
+        "/Users/conorhaworth/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-reflect/1.6.10/kotlin-reflect-1.6.10.jar",
+        "/Users/conorhaworth/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-daemon-embeddable/2.0.21/kotlin-daemon-embeddable-2.0.21.jar",
+        "/Users/conorhaworth/Library/Caches/Amper/.m2.cache/org/jetbrains/intellij/deps/trove4j/1.0.20200330/trove4j-1.0.20200330.jar",
+        "/Users/conorhaworth/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.6.4/kotlinx-coroutines-core-jvm-1.6.4.jar",
+        "/Users/conorhaworth/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.8.0/kotlin-stdlib-jdk8-1.8.0.jar",
+        "/Users/conorhaworth/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.8.0/kotlin-stdlib-jdk7-1.8.0.jar"
+    ],
+    "outputsState": {
+        "/Users/conorhaworth/Library/Caches/Amper/.m2.cache/org/jetbrains/annotations/13.0/annotations-13.0.jar": "size 17536 mtime 2024-11-29T12:43:21.538632658Z mode 420 owner conorhaworth group staff",
+        "/Users/conorhaworth/Library/Caches/Amper/.m2.cache/org/jetbrains/intellij/deps/trove4j/1.0.20200330/trove4j-1.0.20200330.jar": "size 572985 mtime 2024-11-29T12:44:00.109327225Z mode 420 owner conorhaworth group staff",
+        "/Users/conorhaworth/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-compiler-embeddable/2.0.21/kotlin-compiler-embeddable-2.0.21.jar": "size 58272093 mtime 2024-11-29T12:44:00.155506629Z mode 420 owner conorhaworth group staff",
+        "/Users/conorhaworth/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-daemon-embeddable/2.0.21/kotlin-daemon-embeddable-2.0.21.jar": "size 345878 mtime 2024-11-29T12:44:00.077743791Z mode 420 owner conorhaworth group staff",
+        "/Users/conorhaworth/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-klib-commonizer-embeddable/2.0.21/kotlin-klib-commonizer-embeddable-2.0.21.jar": "size 3572966 mtime 2024-11-29T12:44:00.203699778Z mode 420 owner conorhaworth group staff",
+        "/Users/conorhaworth/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-reflect/1.6.10/kotlin-reflect-1.6.10.jar": "size 3038560 mtime 2024-11-29T12:44:00.079604746Z mode 420 owner conorhaworth group staff",
+        "/Users/conorhaworth/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-script-runtime/2.0.21/kotlin-script-runtime-2.0.21.jar": "size 43371 mtime 2024-11-29T12:44:00.077516375Z mode 420 owner conorhaworth group staff",
+        "/Users/conorhaworth/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.8.0/kotlin-stdlib-jdk7-1.8.0.jar": "size 963 mtime 2024-11-29T12:44:00.294430964Z mode 420 owner conorhaworth group staff",
+        "/Users/conorhaworth/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.8.0/kotlin-stdlib-jdk8-1.8.0.jar": "size 968 mtime 2024-11-29T12:44:00.29253726Z mode 420 owner conorhaworth group staff",
+        "/Users/conorhaworth/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib/2.0.21/kotlin-stdlib-2.0.21.jar": "size 1747660 mtime 2024-11-29T12:43:20.859399452Z mode 420 owner conorhaworth group staff",
+        "/Users/conorhaworth/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlinx/kotlinx-coroutines-core-jvm/1.6.4/kotlinx-coroutines-core-jvm-1.6.4.jar": "size 1476653 mtime 2024-11-29T12:44:00.084981276Z mode 420 owner conorhaworth group staff"
+    },
+    "outputProperties": {}
+}

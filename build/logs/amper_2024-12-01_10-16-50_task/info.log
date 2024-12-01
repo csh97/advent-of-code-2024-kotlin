@@ -1,0 +1,5 @@
+JetBrains Amper version 0.5.0+e7ace8b
+running on Mac OS X 15.1.1 jvm arch aarch64
+
+00:01.007 INFO  :advent-of-code-2024-kotlin:resolveDependenciesJvm ExecuteOnChangedInputs    ':advent-of-code-2024-kotlin:resolveDependenciesJvm' is up-to-date
+00:01.027 INFO  :advent-of-code-2024-kotlin:compileJvm ExecuteOnChangedInputs    ':advent-of-code-2024-kotlin:compileJvm' is up-to-date

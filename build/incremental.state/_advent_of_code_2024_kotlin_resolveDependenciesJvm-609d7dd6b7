@@ -1,0 +1,25 @@
+{
+    "amperBuild": "0.5.0+e7ace8b",
+    "configuration": {
+        "compileDependencies": "org.jetbrains.kotlin:kotlin-stdlib:2.0.21",
+        "repositories": "https://repo1.maven.org/maven2|https://maven.google.com|https://maven.pkg.jetbrains.space/public/p/compose/dev",
+        "resolveNativeTarget": "",
+        "resolvePlatform": "jvm",
+        "runtimeDependencies": "org.jetbrains.kotlin:kotlin-stdlib:2.0.21",
+        "userCacheRoot": "/Users/conorhaworth/Library/Caches/Amper"
+    },
+    "inputs": [],
+    "inputsState": {},
+    "outputs": [
+        "/Users/conorhaworth/Library/Caches/Amper/.m2.cache/org/jetbrains/annotations/13.0/annotations-13.0.jar",
+        "/Users/conorhaworth/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib/2.0.21/kotlin-stdlib-2.0.21.jar"
+    ],
+    "outputsState": {
+        "/Users/conorhaworth/Library/Caches/Amper/.m2.cache/org/jetbrains/annotations/13.0/annotations-13.0.jar": "size 17536 mtime 2024-11-29T12:43:21.538632658Z mode 420 owner conorhaworth group staff",
+        "/Users/conorhaworth/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib/2.0.21/kotlin-stdlib-2.0.21.jar": "size 1747660 mtime 2024-11-29T12:43:20.859399452Z mode 420 owner conorhaworth group staff"
+    },
+    "outputProperties": {
+        "compile": "/Users/conorhaworth/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib/2.0.21/kotlin-stdlib-2.0.21.jar:/Users/conorhaworth/Library/Caches/Amper/.m2.cache/org/jetbrains/annotations/13.0/annotations-13.0.jar",
+        "runtime": "/Users/conorhaworth/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib/2.0.21/kotlin-stdlib-2.0.21.jar:/Users/conorhaworth/Library/Caches/Amper/.m2.cache/org/jetbrains/annotations/13.0/annotations-13.0.jar"
+    }
+}
