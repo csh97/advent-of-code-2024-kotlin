@@ -1,9 +1,0 @@
-JetBrains Amper version 0.5.0+e7ace8b
-running on Mac OS X 15.1.1 jvm arch aarch64
-
-00:01.056 INFO  :advent-of-code-2024-kotlin:resolveDependenciesJvm ExecuteOnChangedInputs    ':advent-of-code-2024-kotlin:resolveDependenciesJvm' is up-to-date
-00:01.076 INFO  :advent-of-code-2024-kotlin:compileJvm ExecuteOnChangedInputs    building ':advent-of-code-2024-kotlin:compileJvm'
-00:01.080 INFO  :advent-of-code-2024-kotlin:compileJvm ExecuteOnChangedInputs    'resolve-org.jetbrains.kotlin-kotlin-build-tools-impl-2.0.21' is up-to-date
-00:01.120 INFO  :advent-of-code-2024-kotlin:compileJvm KotlinBuildToolsApiKt     i: [-Xjdk-release=17, -jdk-home, /Users/conorhaworth/Library/Caches/Amper/extract.cache/7de4a97883-amazon-corretto-21.0.1.12.1-macosx-aarch64.tar.gz.dcab71.d/Contents/Home, -classpath, /Users/conorhaworth/Library/Caches/Amper/.m2.cache/org/jetbrains/kotlin/kotlin-stdlib/2.0.21/kotlin-stdlib-2.0.21.jar:/Users/conorhaworth/Library/Caches/Amper/.m2.cache/org/jetbrains/annotations/13.0/annotations-13.0.jar, -no-stdlib, -language-version, 2.0, -api-version, 2.0, -d, /Users/conorhaworth/Developer/advent-of-code-2024-kotlin/build/tasks/_advent-of-code-2024-kotlin_compileJvm]
-00:03.026 INFO  :advent-of-code-2024-kotlin:compileJvm JvmCompileTask            Copy resources from '/Users/conorhaworth/Developer/advent-of-code-2024-kotlin/resources' to '/Users/conorhaworth/Developer/advent-of-code-2024-kotlin/build/tasks/_advent-of-code-2024-kotlin_compileJvm'
-00:03.029 INFO  :advent-of-code-2024-kotlin:compileJvm ExecuteOnChangedInputs    finished ':advent-of-code-2024-kotlin:compileJvm' in 1.952740583s

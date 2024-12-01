@@ -1,9 +1,0 @@
-JetBrains Amper version 0.5.0+e7ace8b
-running on Mac OS X 15.1.1 jvm arch aarch64
-
-00:01.345 INFO  commonizeNativeDistribution ExecuteOnChangedInputs    'resolve-org.jetbrains.kotlin-kotlin-klib-commonizer-embeddable-2.0.21' is up-to-date
-00:01.348 INFO  commonizeNativeDistribution NativeDistributionCommonizerCache Acquire lock: /Users/conorhaworth/Library/Caches/Amper/extract.cache/a82ae6c7b2-kotlin-native-prebuilt-2.0.21-macos-aarch64.tar.gz.96e115.d/klib/commonized/2.0.21/.lock ...
-00:01.349 INFO  commonizeNativeDistribution NativeDistributionCommonizerCache Lock acquired: /Users/conorhaworth/Library/Caches/Amper/extract.cache/a82ae6c7b2-kotlin-native-prebuilt-2.0.21-macos-aarch64.tar.gz.96e115.d/klib/commonized/2.0.21/.lock
-00:01.349 INFO  commonizeNativeDistribution NativeDistributionCommonizerCache Calculating cache state for []
-00:01.349 INFO  commonizeNativeDistribution NativeDistributionCommonizerCache All available targets are commonized already - Nothing to do
-00:01.349 INFO  commonizeNativeDistribution NativeDistributionCommonizerCache Lock released: /Users/conorhaworth/Library/Caches/Amper/extract.cache/a82ae6c7b2-kotlin-native-prebuilt-2.0.21-macos-aarch64.tar.gz.96e115.d/klib/commonized/2.0.21/.lock
