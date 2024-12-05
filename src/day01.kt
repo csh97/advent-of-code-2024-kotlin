@@ -1,10 +1,10 @@
 import kotlin.math.abs
 
-fun part1(firstIds: List<Int>, secondIds: List<Int>): Int {
+private fun part1(firstIds: List<Int>, secondIds: List<Int>): Int {
     return firstIds.zip(secondIds).sumOf { abs(it.first - it.second) }
 }
 
-fun part2(firstIds: List<Int>, secondIds: List<Int>): Int {
+private fun part2(firstIds: List<Int>, secondIds: List<Int>): Int {
     return firstIds.sumOf { id -> id * secondIds.count { it == id } }
 }
 

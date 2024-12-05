@@ -1,4 +1,4 @@
-fun List<Int>.isSafe(): Boolean {
+private fun List<Int>.isSafe(): Boolean {
     val diffs = windowed(2, 1) {
         it.last() - it.first()
     }
@@ -6,11 +6,11 @@ fun List<Int>.isSafe(): Boolean {
     return diffs.all { it in 1..3 } || diffs.all { it in -3..-1 }
 }
 
-fun part1(input: List<List<Int>>): Int {
+private fun part1(input: List<List<Int>>): Int {
     return input.count { it.isSafe() }
 }
 
-fun part2(input: List<List<Int>>): Int {
+private fun part2(input: List<List<Int>>): Int {
     return input.count { report ->
         report.isSafe() || report.indices.map { report.take(it) + report.drop(it + 1) }.any { it.isSafe() }
     }

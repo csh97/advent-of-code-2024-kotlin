@@ -1,18 +1,16 @@
 import kotlin.text.Regex
 
-val multiplyInstructionPattern = Regex("""mul\([0-9]{1,3},[0-9]{1,3}\)""")
+private val multiplyInstructionPattern = Regex("""mul\([0-9]{1,3},[0-9]{1,3}\)""")
 
-fun part1(input: String): Int {
+private fun part1(input: String): Int {
     val matches = multiplyInstructionPattern.findAll(input).map { it.value }.toList()
 
-    return matches.map {
-        it.extractMultiplyInstruction()
-    }.fold(0) { count, instruction ->
+    return matches.map { it.extractMultiplyInstruction() }.fold(0) { count, instruction ->
         count + (instruction.first * instruction.second)
     }
 }
 
-fun part2(input: String): Int {
+private fun part2(input: String): Int {
     val doPattern = Regex("""do\(\)""")
     val dontPattern = Regex("""don't\(\)""")
     val multiplyMaxLength = 12
@@ -43,12 +41,12 @@ fun part2(input: String): Int {
     }.first
 }
 
-fun String.extractMultiplyInstruction(): Pair<Int, Int> {
+private fun String.extractMultiplyInstruction(): Pair<Int, Int> {
     val (a, b) = substringAfter("(").substringBefore(")").split(",")
     return a.toInt() to b.toInt()
 }
 
-fun String.scanAhead(start: Int, end: Int): String = substring(start, (start+end).coerceAtMost(length))
+private fun String.scanAhead(start: Int, end: Int): String = substring(start, (start + end).coerceAtMost(length))
 
 fun main() {
     val input = "day03.txt".readFile()
