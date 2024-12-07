@@ -22,8 +22,24 @@ private fun part1(input: List<String>): Int {
     return walk(guard = Guard(position = Position(x = initialX, y = initialY), direction =  Direction.UP), map = input).count()
 }
 
+private fun part2(input: List<String>): Int {
+    val initialY = input.indexOfFirst { it.contains("^") }
+    val initialX = input[initialY].indexOf("^")
+    val initialPosition = Position(x = initialX, y = initialY)
+    val path = walk(Guard(position = initialPosition, direction = Direction.UP), input).filterNot { it == initialPosition }.dropLast(1)
+
+    return path.map { it ->
+        val lineToAddBlock = input[it.y]
+        val newLineWithBlock = lineToAddBlock.slice((0..it.x-1)) + "#" + lineToAddBlock.slice((it.x+1..lineToAddBlock.length-1))
+        val mapWithAddedBlock = input.slice((0..it.y-1)) + newLineWithBlock + input.slice((it.y+1..input.size-1))
+
+        val result = walk(guard = Guard(position = initialPosition, direction =  Direction.UP), map = mapWithAddedBlock)
+        result.isEmpty()
+    }.count { it == true } + 1
+}
+
 private tailrec fun walk(guard: Guard, map: List<String>): Set<Position> {
-    val inFront = if (guard.position.y + guard.direction.y < map.size && guard.position.y + guard.direction.y >= 0 && guard.position.x + guard.direction.x < map[0].length && guard.position.x + guard.direction.x >= 0) {
+    val inFront = if (guard.isInBounds(map)) {
         map[guard.position.y + guard.direction.y][guard.position.x + guard.direction.x]
     } else {
         null
@@ -35,8 +51,7 @@ private tailrec fun walk(guard: Guard, map: List<String>): Set<Position> {
     }
 
     val nextDirection = if (inFront == '#') {
-        if (guard.blocksSeen.contains(Position(y = guard.position.y + guard.direction.y, x = guard.position.x + guard.direction.x))
-                    && guard.blocksSeen[Position(y = guard.position.y + guard.direction.y, x = guard.position.x + guard.direction.x)] == guard.direction) {
+        if (guard.isInLoop()) {
             return emptySet()
         }
         guard.blocksSeen.put(Position(y = guard.position.y + guard.direction.y, x = guard.position.x + guard.direction.x), guard.direction)
@@ -57,25 +72,15 @@ private tailrec fun walk(guard: Guard, map: List<String>): Set<Position> {
     guard.positionsVisited[guard.position] = guard.direction
     guard.direction = nextDirection
 
-
     return walk(guard, map)
 }
 
-private fun part2(input: List<String>): Int {
-    val initialY = input.indexOfFirst { it.contains("^") }
-    val initialX = input[initialY].indexOf("^")
-    val initialPosition = Position(x = initialX, y = initialY)
-    val path = walk(Guard(position = initialPosition, direction = Direction.UP), input).filterNot { it == initialPosition }.dropLast(1)
+private fun Guard.isInBounds(map: List<String>) =
+    position.y + direction.y < map.size && position.y + direction.y >= 0
+            && position.x + direction.x < map[0].length && position.x + direction.x >= 0
 
-    return path.map { it ->
-        val lineToAddBlock = input[it.y]
-        val newLineWithBlock = lineToAddBlock.slice((0..it.x-1)) + "#" + lineToAddBlock.slice((it.x+1..lineToAddBlock.length-1))
-        val mapWithAddedBlock = input.slice((0..it.y-1)) + newLineWithBlock + input.slice((it.y+1..input.size-1))
-
-        val result = walk(guard = Guard(position = initialPosition, direction =  Direction.UP), map = mapWithAddedBlock)
-        result.isEmpty()
-    }.count { it == true } + 1
-}
+private fun Guard.isInLoop() = blocksSeen.contains(Position(y = position.y + direction.y, x = position.x + direction.x))
+        && blocksSeen[Position(y = position.y + direction.y, x = position.x + direction.x)] == direction
 
 fun main() {
     val input = "day06.txt".readLines()
