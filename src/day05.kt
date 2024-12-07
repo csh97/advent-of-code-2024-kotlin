@@ -11,7 +11,6 @@ private fun part2(rules: List<Pair<String, String>>, updates: List<List<String>>
 
     return invalidUpdates.sumOf { update ->
         val fixedUpdate = tryAndFix(rules, update)
-
         fixedUpdate[fixedUpdate.size / 2].toInt()
     }
 }
